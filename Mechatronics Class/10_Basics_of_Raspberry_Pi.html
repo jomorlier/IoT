@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>10_Basic_of_Raspberry_Pi</title>
+<title>10_Basics_of_Raspberry_Pi</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11751,7 +11751,30 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="1.-Introduction-of-Raspberry-Pi">1. Introduction of Raspberry Pi<a class="anchor-link" href="#1.-Introduction-of-Raspberry-Pi">&#182;</a></h1><h2 id="1.1.-Raspberry-Pi-3-Hardware-Spec">1.1. Raspberry Pi 3 Hardware Spec<a class="anchor-link" href="#1.1.-Raspberry-Pi-3-Hardware-Spec">&#182;</a></h2><h3 id="1.1.1.-Raspberry-Pi-3-Hardware-Spec">1.1.1. Raspberry Pi 3 Hardware Spec<a class="anchor-link" href="#1.1.1.-Raspberry-Pi-3-Hardware-Spec">&#182;</a></h3><ul>
+<p><br><br>
+<font size='6'><b>Basics of Raspberry Pi</b></font><br><br></p>
+<table style="border-style: hidden; border-collapse: collapse;" width = "80%"> 
+    <tr style="border-style: hidden; border-collapse: collapse;">
+        <td width = 60% style="border-style: hidden; border-collapse: collapse;">
+
+        </td>
+        <td width = 20%>
+        by Seungchul Lee<br>iSystems Design Lab<br>UNIST<br>http://isystems.unist.ac.kr/
+        </td>
+    </tr>
+</table><p>Table of Contents</p>
+<p><div id="toc"></div></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="1.-Introduction-of-Raspberry-Pi">1. Introduction of Raspberry Pi<a class="anchor-link" href="#1.-Introduction-of-Raspberry-Pi">&#182;</a></h1><h2 id="1.1.-Raspberry-Pi-3-Hardware-Spec">1.1. Raspberry Pi 3 Hardware Spec<a class="anchor-link" href="#1.1.-Raspberry-Pi-3-Hardware-Spec">&#182;</a></h2><p><strong>Raspberry Pi 3 Hardware Spec</strong></p>
+<ul>
 <li>Broadcom BCM2837<ul>
 <li>1.2GHz, 1Gb RAM</li>
 </ul>
@@ -11765,7 +11788,9 @@ div#notebook {
 <li>Micro SD card slot</li>
 <li>etc.</li>
 </ul>
-<h3 id="1.1.2.-Raspberry-Pi-3-vs.-Arduino">1.1.2. Raspberry Pi 3 vs. Arduino<a class="anchor-link" href="#1.1.2.-Raspberry-Pi-3-vs.-Arduino">&#182;</a></h3><ul>
+<p><img src = "./image_files/raspberry_board.jpg" style="border:1px solid black", width =500></p>
+<p><strong>Raspberry Pi 3 vs. Arduino</strong></p>
+<ul>
 <li>Raspberry Pi 3 procesesor is faster<ul>
 <li>1.2GHz vs 16MHz</li>
 </ul>
@@ -11788,6 +11813,7 @@ div#notebook {
 </ul>
 </li>
 </ul>
+<p><img src = "./image_files/raspberry_arduino.png" style="border:1px solid black", width =500></p>
 
 </div>
 </div>
@@ -11797,21 +11823,21 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.2.-Raspbery-Pi-Setup">1.2. Raspbery Pi Setup<a class="anchor-link" href="#1.2.-Raspbery-Pi-Setup">&#182;</a></h2><h3 id="1.2.1.-Setup-of-the-Raspberry-Pi">1.2.1. Setup of the Raspberry Pi<a class="anchor-link" href="#1.2.1.-Setup-of-the-Raspberry-Pi">&#182;</a></h3><p>Step 1: Plug in a monitor (via HDMI) and a keyboard and mouse (via USB)</p>
-
-<pre><code>- Need an interface to the device
-
-</code></pre>
+<h2 id="1.2.-Raspbery-Pi-Setup">1.2. Raspbery Pi Setup<a class="anchor-link" href="#1.2.-Raspbery-Pi-Setup">&#182;</a></h2><p><strong>Setup of the Raspberry Pi</strong></p>
+<p>Step 1: Plug in a monitor (via HDMI) and a keyboard and mouse (via USB)</p>
+<ul>
+<li>Need an interface to the device</li>
+</ul>
 <p>Step 2: Get an operating system</p>
-
-<pre><code>- Raspberry Pi needs an operating system
-- Operating system image must be present on the micro SD card
-
-</code></pre>
-<h3 id="1.2.2.-Installing-an-Operating-System">1.2.2. Installing an Operating System<a class="anchor-link" href="#1.2.2.-Installing-an-Operating-System">&#182;</a></h3><ul>
-<li>Use New Out-Of-Box Software(NOOBS)<ul>
+<ul>
+<li>Raspberry Pi needs an operating system</li>
+<li>Operating system image must be present on the micro SD card</li>
+</ul>
+<p><strong>Installing an Operating System</strong></p>
+<ul>
+<li>Use New Out-Of-Box Software (NOOBS)<ul>
 <li>Comes preinstalled on micro SD bundled with Raspberry Pi boards</li>
-<li>Otherwise, download it for free from www.raspberrypi.org/downloads</li>
+<li>Otherwise, download it for free from <a href="https://www.raspberrypi.org/downloads">https://www.raspberrypi.org/downloads</a></li>
 <li>If NOOBS is not preinstalled on micro SD, you'll need to:<ol>
 <li>Format the micro SD (need an SD reader)</li>
 <li>Extract the NOOBS download</li>
@@ -11822,6 +11848,7 @@ div#notebook {
 </li>
 <li>NOOBS will install an operation system on your micro SD card</li>
 </ul>
+<p><img src = "./image_files/noobs.png" style="border:1px solid black", width =500></p>
 
 </div>
 </div>
@@ -11846,6 +11873,7 @@ div#notebook {
 </li>
 <li>LXTerminal is the terminal used in Raspian</li>
 </ul>
+<p><img src = "./image_files/lxterminal.png" style="border:1px solid black", width =500></p>
 <h3 id="1.3.2.-Login">1.3.2. Login<a class="anchor-link" href="#1.3.2.-Login">&#182;</a></h3><p><strong>Accounts</strong></p>
 <ul>
 <li>There are be many user accounts on a Linux system</li>
@@ -11857,15 +11885,20 @@ div#notebook {
 <ul>
 <li>"man" gives information about a Linux command</li>
 </ul>
-<h3 id="1.3.3.-Linux-Filesystem">1.3.3. Linux Filesystem<a class="anchor-link" href="#1.3.3.-Linux-Filesystem">&#182;</a></h3><p>Hierarchy of directories and files</p>
+<p><img src = "./image_files/man_pwd.png" style="border:1px solid black", width =500>
+<img src = "./image_files/man_pwd_.png" style="border:1px solid black", width =500></p>
+<h3 id="1.3.3.-Linux-Filesystem">1.3.3. Linux Filesystem<a class="anchor-link" href="#1.3.3.-Linux-Filesystem">&#182;</a></h3><p><img src = "./image_files/filesystem.png" style="border:1px solid black"></p>
+<p>Hierarchy of directories and files</p>
 <p><strong>pwd</strong></p>
 <ul>
 <li>Show current location</li>
 </ul>
+<p><img src = "./image_files/pwd.png" style="border:1px solid black", width =500></p>
 <p><strong>cd</strong></p>
 <ul>
 <li>To a specific directory</li>
 </ul>
+<p><img src = "./image_files/cd.png" style="border:1px solid black", width =500></p>
 <p><strong>ls</strong></p>
 <ul>
 <li>Show the contents of a diretory<ul>
@@ -11874,20 +11907,25 @@ div#notebook {
 </li>
 <li>Show all detail with -l option</li>
 </ul>
+<p><img src = "./image_files/ls.png" style="border:1px solid black", width =500></p>
 <p><strong>mkdir, rmdir</strong></p>
 <ul>
 <li>mkdir creates a directory</li>
 <li>rmdir removes a directory</li>
 <li>rmdir only works if directory is empty</li>
 </ul>
-<h3 id="1.3.4.-Text-Editors">1.3.4. Text Editors<a class="anchor-link" href="#1.3.4.-Text-Editors">&#182;</a></h3><p><strong>vi</strong></p>
+<p><img src = "./image_files/mkdir_rmdir.png" style="border:1px solid black", width =500></p>
+<h3 id="1.3.4.-Text-Editors">1.3.4. Text Editors<a class="anchor-link" href="#1.3.4.-Text-Editors">&#182;</a></h3><p><strong>nano</strong></p>
 <ul>
-<li>Run it by typing "vi" at the prompt<ul>
+<li>Run it by typing "nano" at the prompt<ul>
 <li>ex) vi test.py</li>
 </ul>
 </li>
 </ul>
+<p><img src = "./image_files/nano.png" style="border:1px solid black", width =500>
+<img src = "./image_files/nano1.png" style="border:1px solid black", width =500></p>
 <p><strong>Viewing a File</strong></p>
+<p><img src = "./image_files/cat.png" style="border:1px solid black", width =500></p>
 <ul>
 <li>"cat" prints the files to the terminal</li>
 <li>"head" prints the first 10 lines</li>
@@ -11900,6 +11938,7 @@ div#notebook {
 </ul>
 </li>
 </ul>
+<p><img src = "./image_files/cp.png" style="border:1px solid black", width =500></p>
 <p><strong>mv</strong></p>
 <ul>
 <li>Move a file</li>
@@ -11909,6 +11948,7 @@ div#notebook {
 </ul>
 </li>
 </ul>
+<p><img src = "./image_files/mv.png" style="border:1px solid black", width =500></p>
 
 </div>
 </div>
@@ -11918,7 +11958,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.3.4.-Permissions">1.3.4. Permissions<a class="anchor-link" href="#1.3.4.-Permissions">&#182;</a></h3><p><strong>File Permissions</strong></p>
+<h3 id="1.3.5.-Permissions">1.3.5. Permissions<a class="anchor-link" href="#1.3.5.-Permissions">&#182;</a></h3><p><strong>File Permissions</strong></p>
 <ul>
 <li>Files have owners<ul>
 <li>User who created the file</li>
@@ -11929,9 +11969,9 @@ div#notebook {
 </ul>
 </li>
 <li>Different permissions can be assigned according to type<ol>
-<li>User : the file owner</li>
-<li>Group : a permission group</li>
-<li>Other : all users</li>
+<li>User: the file owner</li>
+<li>Group: a permission group</li>
+<li>Other: all users</li>
 </ol>
 </li>
 </ul>
@@ -11948,6 +11988,7 @@ div#notebook {
 <ul>
 <li>ls -l</li>
 </ul>
+<p><img src = "./image_files/permissions.png" style="border:1px solid black", width =500></p>
 
 </div>
 </div>
@@ -11959,7 +12000,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Root Account</strong></p>
 <ul>
-<li>The root account ha shighest permission level</li>
+<li>The root account has highest permission level</li>
 <li>Key files and directories are only accessible by root</li>
 <li>Sometimes you need root privileges<ul>
 <li>Install a program</li>
@@ -11977,7 +12018,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.3.5.-Shutdown">1.3.5. Shutdown<a class="anchor-link" href="#1.3.5.-Shutdown">&#182;</a></h3><ul>
+<h3 id="1.3.6.-Shutdown">1.3.6. Shutdown<a class="anchor-link" href="#1.3.6.-Shutdown">&#182;</a></h3><ul>
 <li>Should not just unplug a Linux machine</li>
 <li>Proper shutdown procedure is needed to place data<ul>
 <li>Flush all buffers, close files, etc.</li>
@@ -12003,25 +12044,30 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.1.-Python-on-Raspberry-Pi">2.1. Python on Raspberry Pi<a class="anchor-link" href="#2.1.-Python-on-Raspberry-Pi">&#182;</a></h2><h3 id="2.1.1.-Python-Language">2.1.1. Python Language<a class="anchor-link" href="#2.1.1.-Python-Language">&#182;</a></h3><ul>
-<li>High-level language, easy to use<ul>
+<h2 id="2.1.-Python-on-Raspberry-Pi">2.1. Python on Raspberry Pi<a class="anchor-link" href="#2.1.-Python-on-Raspberry-Pi">&#182;</a></h2><p><strong>Python Language</strong></p>
+<ul>
+<li><p>High-level language, easy to use</p>
+<ul>
 <li>Do not need to explicitly declare data types</li>
 <li>No pointers</li>
 <li>Object-oriented programming, classes</li>
 </ul>
 </li>
-<li>Slow compared to C, C++<ul>
+<li><p>Slow compared to C, C++</p>
+<ul>
 <li>Interpreted, not compiled</li>
 </ul>
 </li>
-<li>Two versions : Python 2.x and Python 3.x<ul>
+<li><p>Two versions : Python 2.x and Python 3.x</p>
+<ul>
 <li>Python 2.x is still supported</li>
 <li>Programming differences are small</li>
 <li>Will use Python 3.x</li>
 </ul>
 </li>
 </ul>
-<h3 id="2.1.2.-Run-Python-Code">2.1.2. Run Python Code<a class="anchor-link" href="#2.1.2.-Run-Python-Code">&#182;</a></h3><ul>
+<p><strong>Run Python Code</strong></p>
+<ul>
 <li>Use VI editor to make Python code</li>
 <li>Run it by typing python3 in terminal<ul>
 <li>ex) python3 pyfile.py</li>
@@ -12029,6 +12075,8 @@ div#notebook {
 </ul>
 </li>
 </ul>
+<p><img src = "./image_files/python_.png" style="border:1px solid black", width =500>
+<img src = "./image_files/python.png" style="border:1px solid black", width =500></p>
 
 </div>
 </div>
@@ -12039,7 +12087,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="2.2.-Basic-of-Python">2.2. Basic of Python<a class="anchor-link" href="#2.2.-Basic-of-Python">&#182;</a></h2><ul>
-<li>Learn Python easily at <a href="https://wikidocs.net/book/1">https://wikidocs.net/book/1</a>, 점프 투 파이썬</li>
+<li>Learn Python easily at <a href="https://wikidocs.net/book/1">https://wikidocs.net/book/1</a>, Jump to Python</li>
 </ul>
 
 </div>
@@ -12050,7 +12098,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.2.1.-Python-Expression-(Python3)">2.2.1. Python Expression (Python3)<a class="anchor-link" href="#2.2.1.-Python-Expression-(Python3)">&#182;</a></h3><p><strong>Algebraic Expressions</strong></p>
+<h3 id="2.2.1.-Python-Expression-(Python-3)">2.2.1. Python Expression (Python 3)<a class="anchor-link" href="#2.2.1.-Python-Expression-(Python-3)">&#182;</a></h3><p><strong>Algebraic Expressions</strong></p>
 <ul>
 <li>Python shell can evaluate algebraic expressions</li>
 <li>Many algebraic functions are available<ul>
@@ -12446,16 +12494,51 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span><span class="sb">``</span><span class="err">`</span>
-<span class="c1"># 3. General Purpose IO pins</span>
-
-<span class="c1">## 3.1. Setup and Output</span>
-
-<span class="c1">### 3.1.1. import</span>
-<span class="o">-</span> <span class="n">Use</span> <span class="n">Python3</span> <span class="n">Module</span> <span class="n">which</span> <span class="ow">is</span> <span class="n">already</span> <span class="n">constucted</span>
-    <span class="o">-</span> <span class="n">ex</span><span class="p">)</span> <span class="sb">``</span><span class="err">`</span><span class="kn">import</span> <span class="nn">RPi.GPIO</span> <span class="kn">as</span> <span class="nn">GPIO</span>
+<h2 id="2.4.-Exceptions">2.4. Exceptions<a class="anchor-link" href="#2.4.-Exceptions">&#182;</a></h2><p><strong>Errors During Execution</strong></p>
+<ul>
+<li>Errors may happen when working with sockets<ul>
+<li>Socket cannot be opened</li>
+<li>Data cannot be sent</li>
+</ul>
+</li>
+<li>Errors occurring during execution are called Exceptions</li>
+<li>There are many kinds for each function<ul>
+<li>ZeroDivisionError</li>
+<li>TypeError</li>
+</ul>
+</li>
+</ul>
+<p><strong>Handling Exceptions</strong></p>
+<ul>
+<li>When an error happens, you might want your code to do something appropriate</li>
+<li>Use try and except statements</li>
+<li>Place code with possible error inside the try clause</li>
+<li>Code in the except clause is executed when an exception occurs<div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+      <span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">/</span> <span class="n">y</span>
+<span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+      <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Divide by zero&quot;</span><span class="p">)</span>
 </pre></div>
-<h3 id="3.1.2.-Pin-Direction-and-Assignment">3.1.2. Pin Direction and Assignment<a class="anchor-link" href="#3.1.2.-Pin-Direction-and-Assignment">&#182;</a></h3><div class="highlight"><pre><span></span><span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="3.-General-Purpose-IO-pins">3. General Purpose IO pins<a class="anchor-link" href="#3.-General-Purpose-IO-pins">&#182;</a></h1><p><img src = "./image_files/pin_map.jpg" style="border:1px solid black", width =500></p>
+<p><strong>import</strong></p>
+<ul>
+<li>Use Python3 Module which is already constucted<ul>
+<li>ex) <code>import RPi.GPIO as GPIO</code></li>
+</ul>
+</li>
+</ul>
+<p><strong>Pin Direction and Assignment</strong></p>
+<div class="highlight"><pre><span></span><span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
 </pre></div>
 <ul>
 <li>Set the pin direction</li>
@@ -12467,8 +12550,7 @@ div#notebook {
 <li>Assign value to output pin</li>
 <li>Like <code>digitalWrite(11, HIGH)</code> for Arduino</li>
 </ul>
-<p><strong>Blink an LED</strong></p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">RPi.GPIO</span> <span class="kn">as</span> <span class="nn">GPIO</span>
+<h2 id="3.1.-Blink-an-LED">3.1. Blink an LED<a class="anchor-link" href="#3.1.-Blink-an-LED">&#182;</a></h2><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">RPi.GPIO</span> <span class="kn">as</span> <span class="nn">GPIO</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="n">GPIO</span><span class="o">.</span><span class="n">setmode</span><span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="n">BOARD</span><span class="p">)</span>
 <span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
@@ -12478,7 +12560,35 @@ div#notebook {
     <span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
-<h3 id="3.1.3.-Pulse-With-Modulation">3.1.3. Pulse With Modulation<a class="anchor-link" href="#3.1.3.-Pulse-With-Modulation">&#182;</a></h3><p><strong>Pulse Width Modulation</strong></p>
+<p><img src = "./image_files/rpi_led.jpg", width =500></p>
+<h2 id="3.2.-Button">3.2. Button<a class="anchor-link" href="#3.2.-Button">&#182;</a></h2><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">RPi.GPIO</span> <span class="kn">as</span> <span class="nn">GPIO</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setmode</span><span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="n">BOARD</span><span class="p">)</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">IN</span><span class="p">)</span>
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">input</span><span class="p">(</span><span class="mi">18</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Button Pressed&quot;</span><span class="p">)</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Button Unpressed&quot;</span><span class="p">)</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+<p><img src = "./image_files/rpi_button.jpg", width =500></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3.3.-PWM-on-RPI">3.3. PWM on RPI<a class="anchor-link" href="#3.3.-PWM-on-RPI">&#182;</a></h2><p>Pulse Width Modulation</p>
+<ul>
+<li>Duty cycle is the percent of time the pulse is high</li>
+<li>Increasing duty cycle increases perceived voltage</li>
+</ul>
+<p><img src = "./image_files/pwm.JPG" style="border:1px solid black" width = 500></p>
 <ul>
 <li>PWM functions in GPIO library</li>
 </ul>
@@ -12524,27 +12634,22 @@ div#notebook {
 <ul>
 <li>1Hz frequency</li>
 </ul>
-<h2 id="3.2.-Input">3.2. Input<a class="anchor-link" href="#3.2.-Input">&#182;</a></h2><h3 id="3.2.1.-Pin-Direction">3.2.1. Pin Direction<a class="anchor-link" href="#3.2.1.-Pin-Direction">&#182;</a></h3><div class="highlight"><pre><span></span><span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">IN</span><span class="p">)</span>
-</pre></div>
-<ul>
-<li>Set the pin direction</li>
-<li>Like <code>pinMode(13, OUTPUT)</code> for Arduino</li>
-</ul>
-<div class="highlight"><pre><span></span><span class="n">val</span> <span class="o">=</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">input</span><span class="p">(</span><span class="mi">18</span><span class="p">)</span>
-</pre></div>
-<p><strong>Get Button Input</strong></p>
+<p><strong>PWM Example</strong></p>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">RPi.GPIO</span> <span class="kn">as</span> <span class="nn">GPIO</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="n">GPIO</span><span class="o">.</span><span class="n">setmode</span><span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="n">BOARD</span><span class="p">)</span>
-<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">IN</span><span class="p">)</span>
-<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">input</span><span class="p">(</span><span class="mi">18</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Button Pressed&quot;</span><span class="p">)</span>
-        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Button Unpressed&quot;</span><span class="p">)</span>
-        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+
+<span class="n">pwm</span> <span class="o">=</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">PWM</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">pwm</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+    <span class="n">pwm</span><span class="o">.</span><span class="n">ChangeDutyCycle</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">pwm</span><span class="o">.</span><span class="n">ChangeDutyCycle</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
 </pre></div>
+<p><img src = "./image_files/rpi_led.jpg", width =500></p>
 
 </div>
 </div>
@@ -12554,36 +12659,32 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="4.-Others">4. Others<a class="anchor-link" href="#4.-Others">&#182;</a></h1><h2 id="4.1.-Exceptions">4.1. Exceptions<a class="anchor-link" href="#4.1.-Exceptions">&#182;</a></h2><h3 id="4.1.1.-Errors-During-Execution">4.1.1. Errors During Execution<a class="anchor-link" href="#4.1.1.-Errors-During-Execution">&#182;</a></h3><ul>
-<li>Errors may happen when working with sockets<ul>
-<li>Socket cannot be opened</li>
-<li>Data cannot be sent</li>
-</ul>
-</li>
-<li>Errors occurring during execution are called Exceptions</li>
-<li>There are many kinds for each function<ul>
-<li>ZeroDivisionError</li>
-<li>TypeError</li>
-</ul>
-</li>
-</ul>
-<h3 id="4.1.2.-Handling-Exceptions">4.1.2. Handling Exceptions<a class="anchor-link" href="#4.1.2.-Handling-Exceptions">&#182;</a></h3><ul>
-<li>When an error happens, you might want your code to do something appropriate</li>
-<li>Use try and except statements</li>
-<li>Place code with possible error inside the try clause</li>
-<li>Code in the except clause is executed when an exception occurs<div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
-      <span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">/</span> <span class="n">y</span>
-<span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
-      <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Divide by zero&quot;</span><span class="p">)</span>
+<h2 id="3.4.-DC-Motor">3.4. DC Motor<a class="anchor-link" href="#3.4.-DC-Motor">&#182;</a></h2><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">RPi.GPIO</span> <span class="kn">as</span> <span class="nn">GPIO</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setmode</span><span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="n">BOARD</span><span class="p">)</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+
+<span class="n">pwm</span> <span class="o">=</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">PWM</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">pwm</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+    <span class="n">pwm</span><span class="o">.</span><span class="n">ChangeDutyCycle</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">pwm</span><span class="o">.</span><span class="n">ChangeDutyCycle</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
 </pre></div>
-</li>
-</ul>
-<h2 id="4.2.-Servo-Control">4.2. Servo Control<a class="anchor-link" href="#4.2.-Servo-Control">&#182;</a></h2><h3 id="4.2.1.-PWM-on-RPI">4.2.1. PWM on RPI<a class="anchor-link" href="#4.2.1.-PWM-on-RPI">&#182;</a></h3><p>Pulse Width Modulation</p>
-<ul>
-<li>Duty cycle is the percent of time the pulse is high</li>
-<li>Increasing duty cycle increases perceived voltage</li>
-</ul>
-<p>Servo Motors</p>
+<p><img src = "./image_files/rpi_dc.jpg", width =500></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3.5.-Servo-Motor-Control">3.5. Servo Motor Control<a class="anchor-link" href="#3.5.-Servo-Motor-Control">&#182;</a></h2><p><img src = "./image_files/servo.jpg" style="border:1px solid black", width =250></p>
+<p><strong>Servo Motors</strong></p>
 <ul>
 <li>Motors whose rotation angle can be precisely controlled</li>
 <li>Pulse width controls rotation anlge<ul>
@@ -12592,12 +12693,9 @@ div#notebook {
 <li>2.0 ms width = 180 degrees</li>
 </ul>
 </li>
-<li>Same interface is used for remote control<ul>
-<li>Receiver sends PWM to control interfaces</li>
 </ul>
-</li>
-</ul>
-<h3 id="4.2.2.-Servo-Control">4.2.2. Servo Control<a class="anchor-link" href="#4.2.2.-Servo-Control">&#182;</a></h3><p>Servo Motor Wiring</p>
+<p><strong>Servo Control</strong></p>
+<p>Servo Motor Wiring</p>
 <ul>
 <li>Three wires:<ul>
 <li>Power (Red)</li>
@@ -12629,25 +12727,384 @@ div#notebook {
 <li>Only pins 12 and 24 (BOARD numbering) can produce PWM signals</li>
 <li>Resistor might be used to isolate pins from servo</li>
 </ul>
-<h3 id="4.2.3.-Servo-Code">4.2.3. Servo Code<a class="anchor-link" href="#4.2.3.-Servo-Code">&#182;</a></h3><p>Servo Scan Code Example</p>
+<p><strong>Servo Example 1</strong></p>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">RPi.GPIO</span> <span class="kn">as</span> <span class="nn">GPIO</span>
 
 <span class="n">GPIO</span><span class="o">.</span><span class="n">setmode</span><span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="n">BOARD</span><span class="p">)</span>
 <span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
 <span class="n">pwm</span> <span class="o">=</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">PWM</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
 <span class="n">pwm</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">foreach</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
     <span class="n">pwm</span><span class="o">.</span><span class="n">ChangeDutyCycle</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="n">foreach</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
     <span class="n">pwm</span><span class="o">.</span><span class="n">ChangeDutyCycle</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
 </pre></div>
+<p><strong>Servo Example 2</strong></p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">RPi.GPIO</span> <span class="kn">as</span> <span class="nn">GPIO</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setmode</span><span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="n">BOARD</span><span class="p">)</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+
+<span class="n">pwm</span> <span class="o">=</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">PWM</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">pwm</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">12.5</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">):</span>
+        <span class="n">pwm</span><span class="o">.</span><span class="n">ChangeDutyCycle</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">12.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span><span class="o">-</span><span class="mf">0.1</span><span class="p">):</span>
+        <span class="n">pwm</span><span class="o">.</span><span class="n">ChangeDutyCycle</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+<p><img src = "./image_files/rpi_servo.jpg", width =250></p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="4.-Advanced">4. Advanced<a class="anchor-link" href="#4.-Advanced">&#182;</a></h1><h2 id="4.1.-I2C-Communication">4.1. I2C Communication<a class="anchor-link" href="#4.1.-I2C-Communication">&#182;</a></h2><ul>
+<li>Set Raspberry Pi to activate I2C communication as <a href="https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c">follows</a></li>
+</ul>
+<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+
+<span class="kn">import</span> <span class="nn">smbus</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="c1"># Power management registers</span>
+
+<span class="n">power_mgmt_1</span> <span class="o">=</span> <span class="mh">0x6b</span>
+<span class="n">power_mgmt_2</span> <span class="o">=</span> <span class="mh">0x6c</span>
+
+<span class="k">def</span> <span class="nf">read_byte</span><span class="p">(</span><span class="n">adr</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">bus</span><span class="o">.</span><span class="n">read_byte_data</span><span class="p">(</span><span class="n">address</span><span class="p">,</span> <span class="n">adr</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">read_word</span><span class="p">(</span><span class="n">adr</span><span class="p">):</span>
+    <span class="n">high</span> <span class="o">=</span> <span class="n">bus</span><span class="o">.</span><span class="n">read_byte_data</span><span class="p">(</span><span class="n">address</span><span class="p">,</span> <span class="n">adr</span><span class="p">)</span>
+    <span class="n">low</span> <span class="o">=</span> <span class="n">bus</span><span class="o">.</span><span class="n">read_byte_data</span><span class="p">(</span><span class="n">address</span><span class="p">,</span> <span class="n">adr</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">val</span> <span class="o">=</span> <span class="p">(</span><span class="n">high</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span><span class="p">)</span> <span class="o">+</span> <span class="n">low</span>
+    <span class="k">return</span> <span class="n">val</span>
+
+<span class="k">def</span> <span class="nf">read_word_2c</span><span class="p">(</span><span class="n">adr</span><span class="p">):</span>
+    <span class="n">val</span> <span class="o">=</span> <span class="n">read_word</span><span class="p">(</span><span class="n">adr</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">val</span> <span class="o">&gt;=</span> <span class="mh">0x8000</span><span class="p">):</span>
+        <span class="k">return</span> <span class="o">-</span><span class="p">((</span><span class="mi">65535</span> <span class="o">-</span> <span class="n">val</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">val</span>
+
+<span class="k">def</span> <span class="nf">dist</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">a</span><span class="o">*</span><span class="n">a</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">b</span><span class="o">*</span><span class="n">b</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">get_y_rotation</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">):</span>
+    <span class="n">radians</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">atan2</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">dist</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">))</span>
+    <span class="k">return</span> <span class="o">-</span><span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">radians</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">get_x_rotation</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">):</span>
+    <span class="n">radians</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">atan2</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">dist</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">z</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">radians</span><span class="p">)</span>
+
+<span class="n">bus</span> <span class="o">=</span> <span class="n">smbus</span><span class="o">.</span><span class="n">SMBus</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># or bus = smbus.SMBus(1) for Revision 2 boards</span>
+<span class="n">address</span> <span class="o">=</span> <span class="mh">0x68</span>       <span class="c1"># This is the address value read via the i2cdetect command</span>
+
+<span class="c1"># Now wake the 6050 up as it starts in sleep mode</span>
+
+<span class="n">bus</span><span class="o">.</span><span class="n">write_byte_data</span><span class="p">(</span><span class="n">address</span><span class="p">,</span> <span class="n">power_mgmt_1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;cls&#39;</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;nt&#39;</span> <span class="k">else</span> <span class="s1">&#39;clear&#39;</span><span class="p">)</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;gyro data&quot;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;---------&quot;</span><span class="p">)</span>
+
+    <span class="n">gyro_xout</span> <span class="o">=</span> <span class="n">read_word_2c</span><span class="p">(</span><span class="mh">0x43</span><span class="p">)</span>
+    <span class="n">gyro_yout</span> <span class="o">=</span> <span class="n">read_word_2c</span><span class="p">(</span><span class="mh">0x45</span><span class="p">)</span>
+    <span class="n">gyro_zout</span> <span class="o">=</span> <span class="n">read_word_2c</span><span class="p">(</span><span class="mh">0x47</span><span class="p">)</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;gyro_xout: &quot;</span><span class="p">,</span> <span class="n">gyro_xout</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;scaled   : &quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">gyro_xout</span> <span class="o">/</span> <span class="mi">131</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;gyro_yout: &quot;</span><span class="p">,</span> <span class="n">gyro_yout</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;scaled   : &quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">gyro_yout</span> <span class="o">/</span> <span class="mi">131</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;gyro_zout: &quot;</span><span class="p">,</span> <span class="n">gyro_zout</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;scaled   : &quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">gyro_zout</span> <span class="o">/</span> <span class="mi">131</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;accelerometer data&quot;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;------------------&quot;</span><span class="p">)</span>
+
+    <span class="n">accel_xout</span> <span class="o">=</span> <span class="n">read_word_2c</span><span class="p">(</span><span class="mh">0x3b</span><span class="p">)</span>
+    <span class="n">accel_yout</span> <span class="o">=</span> <span class="n">read_word_2c</span><span class="p">(</span><span class="mh">0x3d</span><span class="p">)</span>
+    <span class="n">accel_zout</span> <span class="o">=</span> <span class="n">read_word_2c</span><span class="p">(</span><span class="mh">0x3f</span><span class="p">)</span>
+
+    <span class="n">accel_xout_scaled</span> <span class="o">=</span> <span class="n">accel_xout</span> <span class="o">/</span> <span class="mf">16384.0</span>
+    <span class="n">accel_yout_scaled</span> <span class="o">=</span> <span class="n">accel_yout</span> <span class="o">/</span> <span class="mf">16384.0</span>
+    <span class="n">accel_zout_scaled</span> <span class="o">=</span> <span class="n">accel_zout</span> <span class="o">/</span> <span class="mf">16384.0</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;accel_xout: &quot;</span><span class="p">,</span> <span class="n">accel_xout</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;scaled    : &quot;</span><span class="p">,</span> <span class="n">accel_xout_scaled</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;accel_yout: &quot;</span><span class="p">,</span> <span class="n">accel_yout</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;scaled    : &quot;</span><span class="p">,</span> <span class="n">accel_yout_scaled</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;accel_zout: &quot;</span><span class="p">,</span> <span class="n">accel_zout</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;scaled    : &quot;</span><span class="p">,</span> <span class="n">accel_zout_scaled</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;x rotation: &quot;</span> <span class="p">,</span> <span class="n">get_x_rotation</span><span class="p">(</span><span class="n">accel_xout_scaled</span><span class="p">,</span> <span class="n">accel_yout_scaled</span><span class="p">,</span> <span class="n">accel_zout_scaled</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;y rotation: &quot;</span> <span class="p">,</span> <span class="n">get_y_rotation</span><span class="p">(</span><span class="n">accel_xout_scaled</span><span class="p">,</span> <span class="n">accel_yout_scaled</span><span class="p">,</span> <span class="n">accel_zout_scaled</span><span class="p">))</span>
+
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+<p><img src = "./image_files/rpi_i2c.jpg", width =500></p>
+<p><img src = "./image_files/i2c.png", width =500></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="4.2.-AD-Converter">4.2. AD Converter<a class="anchor-link" href="#4.2.-AD-Converter">&#182;</a></h2><ul>
+<li>Set Raspberry Pi to activate SPI communication as <a href="https://learn.adafruit.com/raspberry-pi-analog-to-digital-converters/mcp3008">follows</a></li>
+</ul>
+<div class="highlight"><pre><span></span><span class="c1"># Simple example of reading the MCP3008 analog input channels and printing</span>
+<span class="c1"># them all out.</span>
+<span class="c1"># Author: Tony DiCola</span>
+<span class="c1"># License: Public Domain</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="c1"># Import SPI library (for hardware SPI) and MCP3008 library.</span>
+<span class="kn">import</span> <span class="nn">Adafruit_GPIO.SPI</span> <span class="kn">as</span> <span class="nn">SPI</span>
+<span class="kn">import</span> <span class="nn">Adafruit_MCP3008</span>
+
+
+<span class="c1"># Software SPI configuration:</span>
+<span class="n">CLK</span>  <span class="o">=</span> <span class="mi">18</span>
+<span class="n">MISO</span> <span class="o">=</span> <span class="mi">23</span>
+<span class="n">MOSI</span> <span class="o">=</span> <span class="mi">24</span>
+<span class="n">CS</span>   <span class="o">=</span> <span class="mi">25</span>
+<span class="n">mcp</span> <span class="o">=</span> <span class="n">Adafruit_MCP3008</span><span class="o">.</span><span class="n">MCP3008</span><span class="p">(</span><span class="n">clk</span><span class="o">=</span><span class="n">CLK</span><span class="p">,</span> <span class="n">cs</span><span class="o">=</span><span class="n">CS</span><span class="p">,</span> <span class="n">miso</span><span class="o">=</span><span class="n">MISO</span><span class="p">,</span> <span class="n">mosi</span><span class="o">=</span><span class="n">MOSI</span><span class="p">)</span>
+
+<span class="c1"># Hardware SPI configuration:</span>
+<span class="c1"># SPI_PORT   = 0</span>
+<span class="c1"># SPI_DEVICE = 0</span>
+<span class="c1"># mcp = Adafruit_MCP3008.MCP3008(spi=SPI.SpiDev(SPI_PORT, SPI_DEVICE))</span>
+
+
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Reading MCP3008 values, press Ctrl-C to quit...&#39;</span><span class="p">)</span>
+<span class="c1"># Print nice channel column headers.</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;| {0:&gt;4} | {1:&gt;4} | {2:&gt;4} | {3:&gt;4} | {4:&gt;4} | {5:&gt;4} | {6:&gt;4} | {7:&gt;4} |&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">*</span><span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">)))</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;-&#39;</span> <span class="o">*</span> <span class="mi">57</span><span class="p">)</span>
+<span class="c1"># Main program loop.</span>
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="c1"># Read all the ADC channel values in a list.</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">8</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
+        <span class="c1"># The read_adc function will get the value of the specified channel (0-3).</span>
+        <span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">mcp</span><span class="o">.</span><span class="n">read_adc</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="c1"># Print the ADC values.</span>
+    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;| {0:&gt;4} | {1:&gt;4} | {2:&gt;4} | {3:&gt;4} | {4:&gt;4} | {5:&gt;4} | {6:&gt;4} | {7:&gt;4} |&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">*</span><span class="n">values</span><span class="p">))</span>
+    <span class="c1"># Pause for half a second.</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src = "./image_files/adc.png", width =500></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="4.3.-Threading">4.3. Threading<a class="anchor-link" href="#4.3.-Threading">&#182;</a></h2><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">threading</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="k">def</span> <span class="nf">every_second</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">every_five_second</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">5</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+
+<span class="n">t1</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span> <span class="o">=</span> <span class="n">every_second</span><span class="p">,</span> <span class="n">args</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;t1 :&quot;</span><span class="p">,))</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span> <span class="o">=</span> <span class="n">every_five_second</span><span class="p">,</span> <span class="n">args</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;t2 :&quot;</span><span class="p">,))</span>
+<span class="n">t1</span><span class="o">.</span><span class="n">daemon</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">t2</span><span class="o">.</span><span class="n">daemon</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">t1</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+<span class="n">t2</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">pass</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="4.4.-Camera">4.4. Camera<a class="anchor-link" href="#4.4.-Camera">&#182;</a></h2><p><img src = "./image_files/rpi_camera.jpg", width =500></p>
+<h3 id="4.4.1.-Camera-Module">4.4.1. Camera Module<a class="anchor-link" href="#4.4.1.-Camera-Module">&#182;</a></h3><p>Raspberry Pi Camera Module</p>
+<ul>
+<li>Cameras are useful sensors</li>
+<li>There are many cameras that can be used with Raspberry Pis(USB)</li>
+<li>The Raspberry Pi Camera module is useful<ul>
+<li>Camera serial Interface (CSI) to the processor</li>
+</ul>
+</li>
+<li>Good Libraries for control</li>
+</ul>
+<p>Enabling the Camera</p>
+<ul>
+<li>Use <code>raspi-config</code> to enable the CSI interface
+<code>sudo raspi-config</code></li>
+<li>Select Enable Camera, Finish</li>
+</ul>
+<h3 id="4.4.2.-Picamera-Library">4.4.2. Picamera Library<a class="anchor-link" href="#4.4.2.-Picamera-Library">&#182;</a></h3><p>python-picamera Library</p>
+<ul>
+<li>Install the library
+<pre><code>sudo apt-get updata
+sudo apt-get install python3picamera
+picamera</code></pre>
+</li>
+<li>Using the librarty<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">picamera</span>
+</pre></div>
+</li>
+<li>Instantiate an object of the PiCamera class<div class="highlight"><pre><span></span><span class="n">camera</span> <span class="o">=</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span>
+</pre></div>
+</li>
+</ul>
+<p>Camera Functions</p>
+<ul>
+<li>Take a picture<div class="highlight"><pre><span></span><span class="n">camera</span><span class="o">.</span><span class="n">capture</span><span class="p">(</span><span class="s2">&quot;pict.jpg&quot;</span><span class="p">)</span>
+</pre></div>
+</li>
+<li>Changing camera settings<ul>
+<li>There are many<div class="highlight"><pre><span></span><span class="n">camera</span><span class="o">.</span><span class="n">hflip</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">camera</span><span class="o">.</span><span class="n">vflip</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">camera</span><span class="o">.</span><span class="n">brightness</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">camera</span><span class="o">.</span><span class="n">sharpness</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</li>
+</ul>
+</li>
+<li>View vido on RPi screen<div class="highlight"><pre><span></span><span class="n">camera</span><span class="o">.</span><span class="n">start_preview</span><span class="p">()</span>
+<span class="n">camera</span><span class="o">.</span><span class="n">stop_preview</span><span class="p">()</span>
+</pre></div>
+</li>
+</ul>
+<p>Video Recording</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">picamera</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="n">camera</span><span class="o">.</span><span class="n">start_recording</span><span class="p">(</span><span class="s2">&quot;vid.h264&quot;</span><span class="p">)</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">camera</span><span class="o">.</span><span class="n">stop_recording</span><span class="p">()</span>
+</pre></div>
+<h3 id="4.4.3.-Capturing-Images">4.4.3. Capturing Images<a class="anchor-link" href="#4.4.3.-Capturing-Images">&#182;</a></h3><p>Sending an Image on the Network</p>
+<ul>
+<li>What if you want to a remote site?<ul>
+<li>Home security system</li>
+</ul>
+</li>
+<li>Capture an image, send it on a connection</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="n">mysocket</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">()</span>
+<span class="n">mysocket</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="s1">&#39;aserver&#39;</span><span class="p">,</span> <span class="mi">8000</span><span class="p">))</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">mysocket</span><span class="o">.</span><span class="n">makefile</span><span class="p">(</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span>
+<span class="n">camera</span><span class="o">.</span><span class="n">capture</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="s1">&#39;jpeg&#39;</span><span class="p">)</span>
+</pre></div>
+<ul>
+<li>Need a file-like object to capture to</li>
+</ul>
+<p>Timelapse Photography</p>
+<ul>
+<li>camera.capture_continuous() takes photos over time</li>
+<li>Takes one argument, a file name</li>
+<li>{counter} and {timestamp} can be substituted</li>
+<li>ex."picture{counter}.jpg" produces picture1.jpg, picture2.jpg, etc.</li>
+</ul>
+<p>Continuous Capture</p>
+<div class="highlight"><pre><span></span><span class="n">camera</span> <span class="o">=</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">camera</span><span class="o">.</span><span class="n">capture_continuous</span><span class="p">(</span><span class="s1">&#39;img(counter).jpg&#39;</span><span class="p">):</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
+</pre></div>
+<ul>
+<li>Iterate through all images<ul>
+<li>Infinite loop</li>
+</ul>
+</li>
+<li>5 minute delay between images</li>
+</ul>
+<p><strong> Example </strong></p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">picamera</span>
+<span class="n">camera</span> <span class="o">=</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span>
+<span class="n">camera</span><span class="o">.</span><span class="n">capture</span><span class="p">(</span><span class="s1">&#39;test_image.jpg&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="nx">javascript</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">getScript</span><span class="p">(</span><span class="s1">&#39;https://kmahelona.github.io/ipython_notebook_goodies/ipython_notebook_toc.js&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+
+<div id="248f29f4-b9c5-4685-84ad-8029419d80fe"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#248f29f4-b9c5-4685-84ad-8029419d80fe');
+$.getScript('https://kmahelona.github.io/ipython_notebook_goodies/ipython_notebook_toc.js')
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     </div>
   </div>
