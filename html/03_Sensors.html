@@ -261,7 +261,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="k">html</span>
+<div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
 &lt;center&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/W0qupcTo6GU&quot; 
 width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
 </pre></div>
@@ -322,13 +322,18 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
         </td>
         <td width = 30% style="border-style: hidden; border-collapse: collapse;">
 <img src = "./image_files/pirsensor.jpg" width = 300>
-        </td>        
+        </td>
+    </tr>
+</table><table style="border-style: hidden; border-collapse: collapse;" width = "96%"> 
+    <tr style="border-style: hidden; border-collapse: collapse;">
         <td width = 30% style="border-style: hidden; border-collapse: collapse;">
 <img src = "./image_files/proximity_pirardbb.gif" width = 400>
         </td>        
+        <td width = 30% style="border-style: hidden; border-collapse: collapse;">
+<img src = "./image_files/scheme_PID_02.png" width = 500>
+        </td>        
     </tr>
-</table><p><img src = "./image_files/scheme_PID_02.png" width = 500></p>
-
+</table>
 </div>
 </div>
 </div>
@@ -337,7 +342,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="k">html</span>
+<div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
 &lt;center&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/CzgA8UfLD-Q&quot; 
 width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
 </pre></div>
@@ -478,7 +483,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="k">html</span>
+<div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
 &lt;center&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/CZk0A6zHr2M&quot; 
 width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
 </pre></div>
@@ -543,7 +548,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="k">html</span>
+<div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
 &lt;center&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/AvFJ3HMoJf4&quot; 
 width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
 </pre></div>
@@ -620,7 +625,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="k">html</span>
+<div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
 &lt;center&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/34sRdI23AYE&quot; 
 width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
 </pre></div>
@@ -675,8 +680,8 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <span class="p">}</span>
 
 <span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">valF</span><span class="p">,</span> <span class="n">valC</span><span class="p">;</span>
-  <span class="kt">double</span> <span class="n">tempF</span><span class="p">,</span> <span class="n">tempC</span><span class="p">,</span> <span class="n">val</span><span class="p">;</span>
+  <span class="kt">double</span> <span class="n">tempF</span><span class="p">,</span> <span class="n">tempC</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">val</span><span class="p">;</span>
   <span class="n">val</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
   <span class="n">tempF</span> <span class="o">=</span> <span class="n">ThermistorF</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>  
   <span class="n">tempC</span> <span class="o">=</span> <span class="n">ThermistorC</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
@@ -698,7 +703,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="k">html</span>
+<div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
 &lt;center&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/-_XkGju35MI&quot; 
 width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
 </pre></div>
@@ -754,7 +759,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="k">html</span>
+<div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
 &lt;center&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/hWdoF6ETxvI&quot; 
 width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
 </pre></div>
@@ -805,7 +810,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 
   <span class="c1">// converting that reading to voltage, for 3.3v arduino use 3.3</span>
   <span class="kt">float</span> <span class="n">voltage</span> <span class="o">=</span> <span class="n">reading</span> <span class="o">*</span> <span class="mf">5.0</span><span class="p">;</span>
-  <span class="n">voltage</span> <span class="o">/=</span> <span class="mf">1024.0</span><span class="p">;</span>
+  <span class="n">voltage</span> <span class="o">=</span> <span class="n">voltage</span> <span class="o">/</span> <span class="mf">1024.0</span><span class="p">;</span>
 
   <span class="c1">// print out the voltage</span>
   <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">voltage</span><span class="p">);</span> 
@@ -862,7 +867,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="k">html</span>
+<div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
 &lt;center&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/EvnsM4r-XV8&quot; 
 width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
 </pre></div>
@@ -893,8 +898,8 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span class="cp">#define trigPin    2</span>
-<span class="cp">#define echoPin    4</span>
+<div class="highlight"><pre><span class="k">const</span> <span class="kt">int</span> <span class="n">trigPin</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">echoPin</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
 
 <span class="kt">long</span> <span class="n">distance</span><span class="p">;</span>
 <span class="kt">long</span> <span class="n">duration</span><span class="p">;</span>
@@ -935,7 +940,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="k">html</span>
+<div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
 &lt;center&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/PG2VhpkPqoA&quot; 
 width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
 </pre></div>
@@ -997,7 +1002,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="k">html</span>
+<div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
 &lt;center&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/V-9KvUVBXSc&quot; 
 width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
 </pre></div>
@@ -1032,10 +1037,6 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <span class="k">const</span> <span class="kt">int</span> <span class="n">ypin</span> <span class="o">=</span> <span class="n">A1</span><span class="p">;</span>
 <span class="k">const</span> <span class="kt">int</span> <span class="n">zpin</span> <span class="o">=</span> <span class="n">A2</span><span class="p">;</span>
 
-<span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
 <span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
 <span class="p">}</span>
@@ -1043,10 +1044,10 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">analogReference</span><span class="p">(</span><span class="n">EXTERNAL</span><span class="p">);</span>
 
-  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;X = &quot;</span> <span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;X = &quot;</span><span class="p">);</span>
   <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">analogRead</span><span class="p">(</span><span class="n">xpin</span><span class="p">));</span>
   <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\t</span><span class="s">&quot;</span><span class="p">);</span>
-  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Y = &quot;</span> <span class="p">);</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Y = &quot;</span><span class="p">);</span>
   <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">analogRead</span><span class="p">(</span><span class="n">ypin</span><span class="p">));</span>
   <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\t</span><span class="s">&quot;</span><span class="p">);</span>
   <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Z = &quot;</span><span class="p">);</span>
@@ -1081,10 +1082,10 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="o">%%</span><span class="nx">javascript</span>
+<div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="nx">javascript</span>
 <span class="nx">$</span><span class="p">.</span><span class="nx">getScript</span><span class="p">(</span><span class="s1">&#39;https://kmahelona.github.io/ipython_notebook_goodies/ipython_notebook_toc.js&#39;</span><span class="p">)</span>
 </pre></div>
 
