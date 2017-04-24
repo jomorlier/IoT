@@ -218,7 +218,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
@@ -417,7 +417,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
@@ -459,7 +459,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
@@ -499,7 +499,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
@@ -539,7 +539,7 @@ width="640" height="360" frameborder="0" allowfullscreen></iframe></center>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
@@ -882,7 +882,7 @@ width="640" height="360" frameborder="0" allowfullscreen></iframe></center>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
@@ -940,10 +940,12 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <span class="k">const</span> <span class="kt">int</span> <span class="n">BUTTON</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 
 <span class="kt">void</span> <span class="nf">switchPressed</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">BUTTON</span><span class="p">)</span> <span class="o">==</span> <span class="n">HIGH</span><span class="p">)</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">BUTTON</span><span class="p">)</span> <span class="o">==</span> <span class="n">HIGH</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-  <span class="k">else</span>
+  <span class="p">}</span>
+  <span class="k">else</span> <span class="p">{</span>
     <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="kt">void</span> <span class="nf">setup</span> <span class="p">()</span> <span class="p">{</span>
@@ -972,10 +974,12 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <span class="p">}</span>
 
 <span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">buttonState</span><span class="p">)</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">buttonState</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">digitalWrite</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-  <span class="k">else</span>
+  <span class="p">}</span>
+  <span class="k">else</span> <span class="p">{</span>
     <span class="n">digitalWrite</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="kt">void</span> <span class="nf">buttonUpdate</span><span class="p">()</span> <span class="p">{</span>
@@ -998,7 +1002,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
@@ -1208,11 +1212,12 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 
   <span class="n">delay</span><span class="p">(</span><span class="n">interval</span><span class="p">);</span>
 
-  <span class="k">if</span> <span class="p">(</span><span class="n">ledState</span> <span class="o">==</span> <span class="n">LOW</span><span class="p">)</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">ledState</span> <span class="o">==</span> <span class="n">LOW</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">ledState</span> <span class="o">=</span> <span class="n">HIGH</span><span class="p">;</span>
-  <span class="k">else</span>
+  <span class="p">}</span>
+  <span class="k">else</span> <span class="p">{</span>
     <span class="n">ledState</span> <span class="o">=</span> <span class="n">LOW</span><span class="p">;</span>
-
+  <span class="p">}</span>
   <span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span> <span class="n">ledState</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
@@ -1237,10 +1242,12 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 
     <span class="n">previousMillis</span> <span class="o">=</span> <span class="n">currentMillis</span><span class="p">;</span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="n">ledState</span> <span class="o">==</span> <span class="n">LOW</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ledState</span> <span class="o">==</span> <span class="n">LOW</span><span class="p">)</span> <span class="p">{</span>
       <span class="n">ledState</span> <span class="o">=</span> <span class="n">HIGH</span><span class="p">;</span>
-    <span class="k">else</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="p">{</span>
       <span class="n">ledState</span> <span class="o">=</span> <span class="n">LOW</span><span class="p">;</span>
+    <span class="p">}</span>
 
     <span class="n">digitalWrite</span><span class="p">(</span><span class="n">ledPin</span><span class="p">,</span> <span class="n">ledState</span><span class="p">);</span>
   <span class="p">}</span>
@@ -1384,10 +1391,12 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <span class="p">}</span>
 
 <span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">buttonState</span><span class="p">)</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">buttonState</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">digitalWrite</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-  <span class="k">else</span>
+  <span class="p">}</span>
+  <span class="k">else</span> <span class="p">{</span>
     <span class="n">digitalWrite</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="kt">void</span> <span class="nf">buttonUpdate</span><span class="p">()</span> <span class="p">{</span>
@@ -1468,7 +1477,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
@@ -1534,7 +1543,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
@@ -1577,7 +1586,7 @@ width="640" height="360" frameborder="0" allowfullscreen></iframe></center>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
@@ -1701,7 +1710,7 @@ Unlike SPI, I2C only requires two wires.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
@@ -1732,7 +1741,7 @@ width="640" height="360" frameborder="0" allowfullscreen></iframe></center>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="nx">javascript</span>
