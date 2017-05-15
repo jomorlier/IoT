@@ -794,7 +794,7 @@ $$
 <div class="highlight"><pre><span class="cp">#include &lt;Servo.h&gt;</span>
 
 <span class="n">Servo</span> <span class="n">myservo</span><span class="p">;</span>
-<span class="k">const</span> <span class="kt">int</span> <span class="n">pint</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">pin</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">pos</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 
 <span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
@@ -912,7 +912,7 @@ $$
     <span class="k">if</span> <span class="p">(</span><span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">angle</span> <span class="o">&lt;=</span> <span class="mi">180</span><span class="p">):</span>
         <span class="n">ser</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">bytes</span><span class="p">([</span><span class="n">angle</span><span class="p">]))</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Servo angle must be an integer between 30 and 180.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Servo angle must be an integer between 0 and 180.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
 
 <span class="c"># Start the serial port to communicate with arduino</span>
 <span class="n">ser</span> <span class="o">=</span> <span class="n">serial</span><span class="o">.</span><span class="n">Serial</span><span class="p">(</span><span class="s">&#39;COM18&#39;</span><span class="p">,</span> <span class="mi">9600</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -926,9 +926,11 @@ $$
         <span class="n">ser</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
         <span class="k">break</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">move</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">angle</span><span class="p">))</span>
-        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.01</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s">&quot;The current servo angle is &quot;</span> <span class="o">+</span> <span class="n">angle</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">move</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">angle</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s">&quot;The current servo angle is &quot;</span> <span class="o">+</span> <span class="n">angle</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Improper input&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
