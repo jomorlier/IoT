@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>09_Digital_Control_blank</title>
+<title>09_Digital_Control_blank_</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -954,7 +954,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
   <span class="c1">//                  Serial out at every dt * cnt</span>
   <span class="c1">///////////////////////////////////////////////////////////</span>
 
-  <span class="k">if</span> <span class="p">(</span> <span class="n">cnt</span> <span class="o">&gt;=</span> <span class="mi">5</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">cnt</span> <span class="o">&gt;=</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">actual</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">);</span>    
     <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">P</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">);</span>   
     <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">I</span><span class="p">);</span> <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;,&quot;</span><span class="p">);</span>    
@@ -988,24 +988,25 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="k">import</span> <span class="n">animation</span>
 <span class="kn">from</span> <span class="nn">matplotlib.widgets</span> <span class="k">import</span> <span class="n">Slider</span><span class="p">,</span> <span class="n">Button</span><span class="p">,</span> <span class="n">CheckButtons</span>
 
+<span class="o">%</span> <span class="n">matplotlib</span> <span class="n">qt</span>
+
 <span class="c">#################################################################</span>
 <span class="c">##                    setup </span>
 <span class="c">#################################################################</span>
 
 <span class="n">ser</span> <span class="o">=</span> <span class="n">serial</span><span class="o">.</span><span class="n">Serial</span><span class="p">(</span><span class="s">&#39;COM4&#39;</span><span class="p">,</span> <span class="mi">9600</span><span class="p">)</span>
 
-<span class="n">leng</span> <span class="o">=</span> <span class="mi">101</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
-<span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">ax2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="n">ax3</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="n">ax4</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">bottom</span><span class="o">=</span><span class="mf">0.225</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">101</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">([</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.425</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">],</span> <span class="n">ylim</span> <span class="o">=</span> <span class="p">(</span><span class="mi">90</span><span class="p">,</span> <span class="mi">270</span><span class="p">))</span>
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">([</span><span class="mf">0.525</span><span class="p">,</span> <span class="mf">0.71</span><span class="p">,</span> <span class="mf">0.425</span><span class="p">,</span> <span class="mf">0.19</span><span class="p">],</span> <span class="n">ylim</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">))</span>
+<span class="n">ax3</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">([</span><span class="mf">0.525</span><span class="p">,</span> <span class="mf">0.48</span><span class="p">,</span> <span class="mf">0.425</span><span class="p">,</span> <span class="mf">0.19</span><span class="p">],</span> <span class="n">ylim</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">180</span><span class="p">))</span>
+<span class="n">ax4</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">([</span><span class="mf">0.525</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.425</span><span class="p">,</span> <span class="mf">0.19</span><span class="p">],</span> <span class="n">ylim</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">))</span>
 
 <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s">&#39;Real-time System Response with PID&#39;</span><span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s">&#39;Angle [Degree]&#39;</span><span class="p">)</span>
-<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">leng</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">130</span><span class="p">,</span> <span class="mi">230</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">90</span><span class="p">,</span> <span class="mi">270</span><span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="k">True</span><span class="p">)</span>
 
 <span class="n">angleR</span><span class="p">,</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">([],</span> <span class="p">[],</span> <span class="s">&#39;b&#39;</span><span class="p">,</span>  <span class="n">label</span> <span class="o">=</span> <span class="s">&#39;angleR&#39;</span><span class="p">)</span>
@@ -1020,7 +1021,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
     <span class="n">axes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="n">axel</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-    <span class="n">axes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">leng</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>    
+    <span class="n">axes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>    
     <span class="n">axes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="k">True</span><span class="p">)</span>
     <span class="n">axes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">&#39;upper left&#39;</span><span class="p">)</span>
     
@@ -1030,17 +1031,11 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 
 <span class="n">ax1</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">&#39;upper left&#39;</span><span class="p">)</span>
 
-<span class="n">t</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">leng</span><span class="p">))</span>
-<span class="n">angle</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">dataP</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">dataI</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">dataD</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">leng</span><span class="p">):</span>
-    <span class="n">angle</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">180</span><span class="p">)</span>
-    <span class="n">dataP</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">dataI</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">dataD</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">t</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+<span class="n">angle</span> <span class="o">=</span> <span class="p">[</span><span class="mi">180</span><span class="p">]</span> <span class="o">*</span> <span class="n">n</span>
+<span class="n">dataP</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">n</span>
+<span class="n">dataI</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">n</span>
+<span class="n">dataD</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">n</span>
 
 <span class="c">#################################################################</span>
 <span class="c">##                    Adjust kP, kI, kD</span>
@@ -1051,16 +1046,15 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <span class="n">kD</span> <span class="o">=</span> <span class="mf">0.10</span>
 
 <span class="n">axcolor</span> <span class="o">=</span> <span class="s">&#39;lightgoldenrodyellow&#39;</span>
-<span class="n">axP</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">([</span><span class="mf">0.125</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.775</span><span class="p">,</span> <span class="mf">0.025</span><span class="p">],</span> <span class="n">axisbg</span><span class="o">=</span><span class="n">axcolor</span><span class="p">)</span>
-<span class="n">axI</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">([</span><span class="mf">0.125</span><span class="p">,</span> <span class="mf">0.10</span><span class="p">,</span> <span class="mf">0.775</span><span class="p">,</span> <span class="mf">0.025</span><span class="p">],</span> <span class="n">axisbg</span><span class="o">=</span><span class="n">axcolor</span><span class="p">)</span>
-<span class="n">axD</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">([</span><span class="mf">0.125</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.775</span><span class="p">,</span> <span class="mf">0.025</span><span class="p">],</span> <span class="n">axisbg</span><span class="o">=</span><span class="n">axcolor</span><span class="p">)</span>
+<span class="n">axP</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">([</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.025</span><span class="p">],</span> <span class="n">facecolor</span><span class="o">=</span><span class="n">axcolor</span><span class="p">)</span>
+<span class="n">axI</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">([</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.10</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.025</span><span class="p">],</span> <span class="n">facecolor</span><span class="o">=</span><span class="n">axcolor</span><span class="p">)</span>
+<span class="n">axD</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">([</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.025</span><span class="p">],</span> <span class="n">facecolor</span><span class="o">=</span><span class="n">axcolor</span><span class="p">)</span>
 
 <span class="n">sP</span> <span class="o">=</span> <span class="n">Slider</span><span class="p">(</span><span class="n">axP</span><span class="p">,</span> <span class="s">&#39;kP&#39;</span><span class="p">,</span> <span class="mf">0.09</span><span class="p">,</span> <span class="mf">0.90</span><span class="p">,</span> <span class="n">valinit</span><span class="o">=</span><span class="n">kP</span><span class="p">)</span>
 <span class="n">sI</span> <span class="o">=</span> <span class="n">Slider</span><span class="p">(</span><span class="n">axI</span><span class="p">,</span> <span class="s">&#39;kI&#39;</span><span class="p">,</span> <span class="mf">0.18</span><span class="p">,</span> <span class="mf">1.80</span><span class="p">,</span> <span class="n">valinit</span><span class="o">=</span><span class="n">kI</span><span class="p">)</span>
 <span class="n">sD</span> <span class="o">=</span> <span class="n">Slider</span><span class="p">(</span><span class="n">axD</span><span class="p">,</span> <span class="s">&#39;kD&#39;</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.20</span><span class="p">,</span> <span class="n">valinit</span><span class="o">=</span><span class="n">kD</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
-    <span class="k">global</span> <span class="n">kP</span><span class="p">,</span> <span class="n">kI</span><span class="p">,</span> <span class="n">kD</span>
     <span class="n">kP</span> <span class="o">=</span> <span class="n">sP</span><span class="o">.</span><span class="n">val</span>
     <span class="n">kI</span> <span class="o">=</span> <span class="n">sI</span><span class="o">.</span><span class="n">val</span>
     <span class="n">kD</span> <span class="o">=</span> <span class="n">sD</span><span class="o">.</span><span class="n">val</span>
@@ -1075,15 +1069,13 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 
 <span class="k">def</span> <span class="nf">init</span><span class="p">():</span>
     <span class="n">angleR</span><span class="o">.</span><span class="n">set_data</span><span class="p">([],</span> <span class="p">[])</span>
-    <span class="n">angleD</span><span class="o">.</span><span class="n">set_data</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">leng</span><span class="p">],</span> <span class="p">[</span><span class="mi">180</span><span class="p">,</span> <span class="mi">180</span><span class="p">])</span>
+    <span class="n">angleD</span><span class="o">.</span><span class="n">set_data</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">],</span> <span class="p">[</span><span class="mi">180</span><span class="p">,</span> <span class="mi">180</span><span class="p">])</span>
     <span class="n">errorP</span><span class="o">.</span><span class="n">set_data</span><span class="p">([],</span> <span class="p">[])</span>
     <span class="n">errorI</span><span class="o">.</span><span class="n">set_data</span><span class="p">([],</span> <span class="p">[])</span>
     <span class="n">errorD</span><span class="o">.</span><span class="n">set_data</span><span class="p">([],</span> <span class="p">[])</span>
     <span class="k">return</span> <span class="n">angleR</span><span class="p">,</span> <span class="n">angleD</span><span class="p">,</span> <span class="n">errorP</span><span class="p">,</span> <span class="n">errorI</span><span class="p">,</span> <span class="n">errorD</span><span class="p">,</span>
 
 <span class="k">def</span> <span class="nf">animate</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
-    <span class="k">global</span> <span class="n">t</span><span class="p">,</span> <span class="n">angle</span><span class="p">,</span> <span class="n">dataP</span><span class="p">,</span> <span class="n">dataI</span><span class="p">,</span> <span class="n">dataD</span><span class="p">,</span> <span class="n">kP</span><span class="p">,</span> <span class="n">kI</span><span class="p">,</span> <span class="n">kD</span>
-
     <span class="k">while</span> <span class="p">(</span><span class="n">ser</span><span class="o">.</span><span class="n">inWaiting</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
         <span class="k">pass</span>
     
@@ -1112,7 +1104,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
     
     <span class="k">return</span> <span class="n">angleR</span><span class="p">,</span> <span class="n">angleD</span><span class="p">,</span> <span class="n">errorP</span><span class="p">,</span> <span class="n">errorI</span><span class="p">,</span> <span class="n">errorD</span><span class="p">,</span>
 
-<span class="n">delay</span> <span class="o">=</span> <span class="mi">50</span>    <span class="c"># dt * cnt</span>
+<span class="n">delay</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">anim</span> <span class="o">=</span> <span class="n">animation</span><span class="o">.</span><span class="n">FuncAnimation</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">animate</span><span class="p">,</span> <span class="n">init_func</span><span class="o">=</span><span class="n">init</span><span class="p">,</span>
                                <span class="n">interval</span><span class="o">=</span><span class="n">delay</span><span class="p">,</span> <span class="n">blit</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
 
