@@ -1055,6 +1055,8 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
 <span class="n">sD</span> <span class="o">=</span> <span class="n">Slider</span><span class="p">(</span><span class="n">axD</span><span class="p">,</span> <span class="s">&#39;kD&#39;</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.20</span><span class="p">,</span> <span class="n">valinit</span><span class="o">=</span><span class="n">kD</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">kP</span><span class="p">,</span> <span class="n">kI</span><span class="p">,</span> <span class="n">kD</span>
+    
     <span class="n">kP</span> <span class="o">=</span> <span class="n">sP</span><span class="o">.</span><span class="n">val</span>
     <span class="n">kI</span> <span class="o">=</span> <span class="n">sI</span><span class="o">.</span><span class="n">val</span>
     <span class="n">kD</span> <span class="o">=</span> <span class="n">sD</span><span class="o">.</span><span class="n">val</span>
@@ -1076,6 +1078,7 @@ width="560" height="315" frameborder="0" allowfullscreen></iframe></center>
     <span class="k">return</span> <span class="n">angleR</span><span class="p">,</span> <span class="n">angleD</span><span class="p">,</span> <span class="n">errorP</span><span class="p">,</span> <span class="n">errorI</span><span class="p">,</span> <span class="n">errorD</span><span class="p">,</span>
 
 <span class="k">def</span> <span class="nf">animate</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    
     <span class="k">while</span> <span class="p">(</span><span class="n">ser</span><span class="o">.</span><span class="n">inWaiting</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
         <span class="k">pass</span>
     
